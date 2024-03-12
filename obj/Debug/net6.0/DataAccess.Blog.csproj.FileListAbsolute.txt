@@ -1,0 +1,14 @@
+C:\Users\ngocm\source\repos\DataAccess.Blog\bin\Debug\net6.0\DataAccess.Blog.deps.json
+C:\Users\ngocm\source\repos\DataAccess.Blog\bin\Debug\net6.0\DataAccess.Blog.runtimeconfig.json
+C:\Users\ngocm\source\repos\DataAccess.Blog\bin\Debug\net6.0\DataAccess.Blog.dll
+C:\Users\ngocm\source\repos\DataAccess.Blog\bin\Debug\net6.0\DataAccess.Blog.pdb
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\DataAccess.Blog.csproj.AssemblyReference.cache
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\DataAccess.Blog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\DataAccess.Blog.AssemblyInfoInputs.cache
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\DataAccess.Blog.AssemblyInfo.cs
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\DataAccess.Blog.csproj.CoreCompileInputs.cache
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\DataAccess.Blog.dll
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\refint\DataAccess.Blog.dll
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\DataAccess.Blog.pdb
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\DataAccess.Blog.genruntimeconfig.cache
+C:\Users\ngocm\source\repos\DataAccess.Blog\obj\Debug\net6.0\ref\DataAccess.Blog.dll
