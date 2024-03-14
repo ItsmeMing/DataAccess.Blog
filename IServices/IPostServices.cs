@@ -9,7 +9,10 @@ namespace DataAccess.Blog.IServices
 {
 	public interface IPostServices
 	{
-		Task<List<Post>> GetPosts(int? post_id, int? category_id);	
+		Task<List<Post>> GetPosts(int? post_id, int? category_id);
+		Task<ReturnData> CreatePost(CreatePost post);
+		Task<ReturnData> UpdatePost(int post_id, CreatePost post);
+		Task<ReturnData> DeletePost(int post_id);
 	}
 }
 	

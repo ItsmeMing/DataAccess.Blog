@@ -8,23 +8,12 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Blog.Entities
 {
-	public class Post
+	public class CreatePost
 	{
-		[Key]
-		public int post_id { get; set; }
-
-		[Required]
-		[StringLength(255)]
 		public string title { get; set; }
 
-		[Required]	
 		public string content { get; set; }
 
-		[Required]
-		[DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-		public DateTime created_at { get; set; }
-
-		[ForeignKey("category_id")]
 		public int category_id { get; set; }
 	}
 }
