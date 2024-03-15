@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Blog.Services
 {
-	public class PostServices: IPostServices
+	public class PostRepository: IPostRepository
 	{
 		private BlogDbContext _context;
 
-		public PostServices(BlogDbContext context)
+		public PostRepository(BlogDbContext context)
 		{
 			_context = context;
 		}
@@ -27,15 +27,15 @@ namespace DataAccess.Blog.Services
 			{
 				if (post_id == null && category_id == null)		
 				{
-					list = _context.Posts.ToList();
+					list = _context.posts.ToList();
 				}
 				else if (post_id != null && category_id == null)
 				{
-					list = _context.Posts.ToList().FindAll(post => post.post_id == post_id);
+					list = _context.posts.ToList().FindAll(post => post.post_id == post_id);
 				}
 				else if (post_id == null && category_id != null)
 				{
-					list = _context.Posts.ToList().FindAll(post => post.category_id == category_id);
+					list = _context.posts.ToList().FindAll(post => post.category_id == category_id);
 				}
 			} 
 			catch (Exception ex)
@@ -70,7 +70,7 @@ namespace DataAccess.Blog.Services
 					postEntity.content = post.content;
 					postEntity.category_id = post.category_id;
 
-					_context.Posts.Add(postEntity);
+					_context.posts.Add(postEntity);
 					_context.SaveChanges();
 				}
 				return returnData;
@@ -103,7 +103,7 @@ namespace DataAccess.Blog.Services
 
 				else
 				{
-					var selectedPost = _context.Posts.SingleOrDefault(b => b.post_id == post_id);
+					var selectedPost = _context.posts.SingleOrDefault(b => b.post_id == post_id);
 
 					if (selectedPost == null)
 					{
@@ -143,7 +143,7 @@ namespace DataAccess.Blog.Services
 
 				// step 2 : Kiểm tra dữ liệu tồn tại không
 
-				var product = _context.Posts.Where(s => s.post_id == post_id).FirstOrDefault();
+				var product = _context.posts.Where(s => s.post_id == post_id).FirstOrDefault();
 
 				if (product == null || product.post_id <= 0)
 				{
@@ -155,7 +155,7 @@ namespace DataAccess.Blog.Services
 
 				// step 3 : Xóa
 
-				_context.Posts.Remove(product);
+				_context.posts.Remove(product);
 
 				var result = _context.SaveChanges();
 

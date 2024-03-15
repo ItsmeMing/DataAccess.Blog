@@ -2014,26 +2014,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ngocm\\.nuget\\packages\\": {}
+    "/Users/minhle/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ngocm\\source\\repos\\DataAccess.Blog\\DataAccess.Blog.csproj",
+      "projectUniqueName": "/Users/minhle/RiderProjects/DataAccess.Blog/DataAccess.Blog.csproj",
       "projectName": "DataAccess.Blog",
-      "projectPath": "C:\\Users\\ngocm\\source\\repos\\DataAccess.Blog\\DataAccess.Blog.csproj",
-      "packagesPath": "C:\\Users\\ngocm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ngocm\\source\\repos\\DataAccess.Blog\\obj\\",
+      "projectPath": "/Users/minhle/RiderProjects/DataAccess.Blog/DataAccess.Blog.csproj",
+      "packagesPath": "/Users/minhle/.nuget/packages/",
+      "outputPath": "/Users/minhle/RiderProjects/DataAccess.Blog/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ngocm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/minhle/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2089,7 +2087,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.418/RuntimeIdentifierGraph.json"
       }
     }
   }

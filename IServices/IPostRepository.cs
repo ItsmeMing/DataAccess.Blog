@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Blog.IServices
 {
-	public interface IPostServices
+	public interface IPostRepository
 	{
 		Task<List<Post>> GetPosts(int? post_id, int? category_id);
 		Task<ReturnData> CreatePost(CreatePost post);
