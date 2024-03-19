@@ -27,11 +27,11 @@ namespace DataAccess.Blog.Services
             {
                 if (order_id == null)
                 {
-                    list = _context.orders.ToList();
+                    list = _context.Orders.ToList();
                 }
                 else
                 {
-                    list = _context.orders.ToList().FindAll(order => order.id == int.Parse(order_id));
+                    list = _context.Orders.ToList().FindAll(order => order.id == int.Parse(order_id));
                 }
             }
             catch (Exception ex)
@@ -66,10 +66,10 @@ namespace DataAccess.Blog.Services
 
                     orderEntity.customer_id = order.CustomerId;
 
-                    _context.orders.Add((orderEntity));
+                    _context.Orders.Add((orderEntity));
                     foreach (var orderDetail in order.orderDetails.ToArray())
                     {
-                        _context.order_details.Add(orderDetail);
+                        _context.OrderDetails.Add(orderDetail);
                     }
                 }
 

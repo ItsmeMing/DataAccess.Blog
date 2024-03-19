@@ -25,7 +25,7 @@ namespace DataAccess.Eshop.UnitOfWork
             _orderRepository = orderRepository;
             _postRepository = postRepository;
             _userRepository = userRepository;
-            _blogDbContext = _blogDbContext;
+            _blogDbContext = blogDbContext;
         }
 
 

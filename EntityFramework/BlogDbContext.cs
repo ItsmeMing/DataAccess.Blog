@@ -15,17 +15,17 @@ namespace DataAccess.Blog.EntityFramework
         {
         }
 
-        // protected override void OnModelCreating(ModelBuilder modelBuilder)
-        // {
-        // 	base.OnModelCreating(modelBuilder);
-        // }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+        	base.OnModelCreating(modelBuilder);
+        }
 
 
-        public virtual DbSet<Post> posts { get; set; } 
-        public virtual DbSet<Category> categories { get; set; }
-        public virtual DbSet<Product> products { get; set; }
-        public virtual DbSet<Order> orders { get; set; }
-        public virtual DbSet<OrderDetail> order_details { get; set; }
-        public virtual DbSet<User> users { get; set; }
+        public virtual DbSet<Post> Posts { get; set; } 
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

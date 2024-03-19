@@ -46,7 +46,7 @@ namespace DataAccess.Blog.Services
                     orderDetailEntity.product_id = orderDetail.product_id;
                     orderDetailEntity.quantity = orderDetail.quantity;
 
-                    _context.order_details.Add(orderDetailEntity);
+                    _context.OrderDetails.Add(orderDetailEntity);
                 }
 
                 return returnData;

@@ -27,11 +27,11 @@ namespace DataAccess.Blog.Services
             {
                 if (product_id == null)
                 {
-                    list = _context.products.ToList();
+                    list = _context.Products.ToList();
                 }
                 else
                 {
-                    list = _context.products.ToList().FindAll(product => product.id == int.Parse(product_id));
+                    list = _context.Products.ToList().FindAll(product => product.id == int.Parse(product_id));
                 }
             } 
             catch (Exception ex)

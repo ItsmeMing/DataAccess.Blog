@@ -26,7 +26,7 @@ namespace DataAccess.Blog.Services
             var user = new User();
             try
             {
-                user = _context.users.ToList().FirstOrDefault(user =>
+                user = _context.Users.ToList().FirstOrDefault(user =>
                     user.username == requestData.username && user.password == requestData.password);
             }
             catch (Exception ex)
@@ -41,12 +41,12 @@ namespace DataAccess.Blog.Services
         {
             try
             {
-                var user = _context.users.ToList().FirstOrDefault(user => user.id == requestData.id);
+                var user = _context.Users.ToList().FirstOrDefault(user => user.id == requestData.id);
                 if (user != null)
                 {
                     user.refresh_token = requestData.refresh_token;
                     user.refresh_token_expired_date = requestData.refresh_token_expired_date;
-                    _context.users.Update(user);
+                    _context.Users.Update(user);
                     _context.SaveChanges();
 
                     return 1;
