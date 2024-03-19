@@ -14,14 +14,17 @@ namespace DataAccess.Eshop.UnitOfWork
         public IProductRepository _productRepository { get; set; }
         public IOrderRepository _orderRepository { get; set; }
         public IPostRepository _postRepository { get; set; }
+        public IUserRepository _userRepository { get; set; }
+
         public BlogDbContext _blogDbContext;
 
         public BlogUnitOfWork(IProductRepository productRepository, IOrderRepository orderRepository,
-            IPostRepository postRepository, BlogDbContext blogDbContext)
+            IPostRepository postRepository, IUserRepository userRepository, BlogDbContext blogDbContext)
         {
             _productRepository = productRepository;
             _orderRepository = orderRepository;
             _postRepository = postRepository;
+            _userRepository = userRepository;
             _blogDbContext = _blogDbContext;
         }
 

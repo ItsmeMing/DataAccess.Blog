@@ -12,6 +12,7 @@ namespace DataAccess.Blog.UnitOfWork
         public IProductRepository _productRepository { get; set; }
         public IPostRepository _postRepository { get; set; }
         public IOrderRepository _orderRepository { get; set; }
+        public IUserRepository _userRepository { get; set; }
         void SaveChanges();
     }
 }
