@@ -60,5 +60,14 @@ namespace DataAccess.Blog.Services
                 throw;
             }
         }
-    }
+
+		public async Task<Function> GetFunctionByCode(string functionCode)
+        {
+            return _context.Function.FirstOrDefault(f => f.FunctionCode == functionCode);
+        }
+		public async Task<UserFunction> UserFunction_GetRole(int userId, int functionId)
+        {
+            return _context.UserFunction.FirstOrDefault(uf => uf.UserId == userId && uf.FunctionId == functionId)
+        }
+	}
 }

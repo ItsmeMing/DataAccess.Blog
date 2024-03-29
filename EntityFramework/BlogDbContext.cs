@@ -27,5 +27,8 @@ namespace DataAccess.Blog.EntityFramework
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
         public virtual DbSet<User> Users { get; set; }
+
+        public virtual DbSet<Function> Function { get; set; }
+        public virtual DbSet<UserFunction> UserFunction { get; set; }
     }
 }

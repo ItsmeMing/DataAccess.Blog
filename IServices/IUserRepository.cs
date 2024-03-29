@@ -12,5 +12,8 @@ namespace DataAccess.Blog.IServices
     {
         Task<User> Login(UserLoginRequestData requestData);
         Task<int> UpdateRefeshToken(UserUpdateRefeshTokenRequestData requestData);
+
+        Task<Function> GetFunctionByCode(string functionCode);
+        Task<UserFunction> UserFunction_GetRole(int userId, int functionId);
     }
 }
