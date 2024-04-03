@@ -67,7 +67,7 @@ namespace DataAccess.Blog.Services
         }
 		public async Task<UserFunction> UserFunction_GetRole(int userId, int functionId)
         {
-            return _context.UserFunction.FirstOrDefault(uf => uf.UserId == userId && uf.FunctionId == functionId)
+            return _context.UserFunction.FirstOrDefault(uf => uf.UserId == userId && uf.FunctionId == functionId);
         }
 	}
 }
